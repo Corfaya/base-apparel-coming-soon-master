@@ -9,17 +9,6 @@
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
   <link rel="stylesheet" href="style.css">
   <title>Frontend Mentor | Base Apparel coming soon page</title>
-
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <!-- <style>
-    .attribution {
-      font-size: 11px;
-      text-align: center;
-    }
-
-    .attribution a {
-      color: hsl(228, 45%, 44%);
-    } -->
   </style>
 </head>
 
@@ -39,20 +28,24 @@
           Add your email below to stay up-to-date with announcements and our launch deals.
         </p>
       </section>
-    
+
       <form>
         <div id="data-entry">
           <input type="text" id="email" name="email" placeholder="Email Address">
-          <button id="btn"></button>
+          <button id="btn">
+            <img src="./images/icon-arrow.svg"
+              alt="The picture of an arrow pointing to the right, on which you can click.">
+          </button>
         </div>
-        <p id="error-message"></p>
-        <p id="check-message"></p>
+        <p id="error-message" class="message"></p>
+        <p id="check-message" class="message"></p>
       </form>
     </section>
 
     <section id="image-box">
       <figure id="image">
-        <img src="./images/hero-desktop.jpg" alt="An image of a girl in a salmon-coloured shirt looking towards the viewer.">
+        <img src="./images/hero-desktop.jpg"
+          alt="An image of a girl in a salmon-coloured shirt looking towards the viewer.">
       </figure>
     </section>
   </main>

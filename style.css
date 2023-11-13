@@ -1,0 +1,94 @@
+/* Reset, Var and Font */
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400;600&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --desaturated-red: hsl(0, 36%, 70%);
+    --soft-red: hsl(0, 93%, 68%);
+    --dark-grayish-red: hsl(0, 6%, 24%);
+    --font: 'Josefin Sans', sans-serif;
+}
+
+/* Work on body and layout */
+body {
+    display: flex;
+    justify-content: center;
+    font-size: 16px;
+    height: 100vh;
+    width: 100%;
+}
+
+main {
+    display: flex;
+    justify-content: center;
+    background-image: url(./images/bg-pattern-desktop.svg);
+    height: 500px;
+    width: 1000px;
+}
+
+/* First task: text */
+#text-box {
+    display: flex;
+    flex-direction: column;
+    margin: 40px 100px 100px 100px;
+    gap: 20px;
+    font-family: var(--font);
+}
+
+#logo {
+    width: 158px;
+    height: 33px;
+    margin-bottom: 50px;
+}
+
+#title {
+    font-size: 2em;
+    text-transform: uppercase;
+    letter-spacing: 10px;
+    color: var(--dark-grayish-red);
+}
+
+span {
+    font-weight: 300;
+    color: var(--desaturated-red);
+}
+
+#informations {
+    font-size: 14px;
+    font-weight: 400;
+    letter-spacing: 1px;
+    color: var(--desaturated-red)
+}
+
+/* Second task: form */
+#data-entry {
+    display: inline-flex;
+}
+
+#email {
+    width: 200px;
+    height: 30px;
+}
+
+#btn {
+    background-image: url(./images/icon-arrow.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 40px;
+    height: 30px;
+}
+
+/* Third task: image */
+#image-box {
+    height: 500px;
+}
+
+#image-box img {
+    width: 381px;
+    height: 500px;
+}

@@ -15,6 +15,8 @@ button.on("click", function(event){
         iconError.removeClass("hidden");
     }
     else {
+        boxMail.removeClass("denied");
+        iconError.addClass("hidden");
         message.text("Thank you for your registration!")
         message.css("color", "hsl(0, 6%, 24%)");
     }

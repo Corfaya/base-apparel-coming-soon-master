@@ -1,17 +1,18 @@
 var button = $("button");
-var error = $("#error-message");
-var welcome = $("#check-message");
-var boxMail = $("#email");
+var message = $(".message");
+var boxMail = $("#data-entry");
 
 button.on("click", function(event){
     event.preventDefault();
     var userMail = $("#email").val();
     if (userMail === "" || checkCharacters(userMail) || !checkExtension(userMail)){
-        error.text("Please, provide a valide email");
+        message.text("Please, provide a valide email");
         boxMail.addClass("denied");
+        message.css("color", "hsl(0, 93%, 68%)");
     }
     else {
-        welcome.text("Thank you for your registration!")
+        message.text("Thank you for your registration!")
+        message.css("color", "hsl(0, 6%, 24%)");
     }
 })
 
@@ -21,10 +22,6 @@ function checkCharacters(email){
 }
 
 function checkExtension(email){
-    const validDomainExtensions = /(\.com|\.net|\.org|\.edu|\.gov|\.mil|\.int|\.eu|\.guru|\.io)$/i;
+    const validDomainExtensions = /(\.com|\.net|\.org|\.edu|\.gov|\.mil|\.int|\.eu|\.guru|\.io|\.it)$/i;
     return validDomainExtensions.test(String(email));
-}
-
-function errorStyle(){
-    
 }

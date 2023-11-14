@@ -93,6 +93,7 @@ span {
 
 .denied {
     border: 1px solid var(--soft-red);
+    border-radius: 40px;
 }
 
 #btn {
@@ -126,10 +127,6 @@ span {
     margin-top: 10px;
     margin-left: 25px;
     font-size: 12px;
-}
-
-#error-message {
-    color: var(--soft-red);
 }
 
 /* Third task: image */

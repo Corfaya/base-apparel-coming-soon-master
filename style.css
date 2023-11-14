@@ -176,6 +176,7 @@ footer {
     bottom: 20px;
     text-align: center;
     color: var(--dark-grayish-red);
+    font-family: var(--font);
 }
 
 /* Media Queries */
@@ -290,6 +291,8 @@ footer {
     }
 
     footer {
+        position: absolute;
+        bottom: 30px;
         font-size: 12px;
     }
 }

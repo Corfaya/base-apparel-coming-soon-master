@@ -1,7 +1,10 @@
+// HTML elements recovery
 var button = $("button");
 var message = $(".message");
 var boxMail = $("#data-entry");
+var iconError = $("#icon-error");
 
+//Event Listener
 button.on("click", function(event){
     event.preventDefault();
     var userMail = $("#email").val();
@@ -9,6 +12,7 @@ button.on("click", function(event){
         message.text("Please, provide a valide email");
         boxMail.addClass("denied");
         message.css("color", "hsl(0, 93%, 68%)");
+        iconError.removeClass("hidden");
     }
     else {
         message.text("Thank you for your registration!")
@@ -16,6 +20,7 @@ button.on("click", function(event){
     }
 })
 
+// FUNCTIONS
 function checkCharacters(email){
     var invalidCharacters = /[!#$%^&*()+=\[\]{}\\|<>\/?]+/i;
     return invalidCharacters.test(String(email));

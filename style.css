@@ -57,7 +57,7 @@ main {
 }
 
 #logo {
-    margin-bottom: 60px;
+    margin-bottom: 40px;
 }
 
 #title {
@@ -92,9 +92,15 @@ span {
     width: 300px;
     height: 10px;
     border: 1px solid var(--desaturated-red);
+    opacity: 0.6;
     border-radius: 40px;
     padding: 20px;
     font-family: var(--font);
+}
+
+::placeholder {
+    color: var(--desaturated-red);
+    opacity: 0.6;
 }
 
 .denied {
@@ -113,7 +119,7 @@ span {
     text-align: center;
     position: relative;
     cursor: pointer;
-    box-shadow: 0px 5px 20px 1px var(--desaturated-red);    
+    box-shadow: 0px 5px 20px 1px var(--desaturated-red);
 }
 
 #btn:hover {
@@ -150,7 +156,7 @@ span {
     height: 20px;
 }
 
-.hidden{
+.hidden {
     display: none;
 }
 
@@ -170,4 +176,116 @@ footer {
     bottom: 20px;
     text-align: center;
     color: var(--dark-grayish-red);
+}
+
+/* Media Queries */
+@media (max-width: 932px) {
+    body {
+        justify-content: center;
+    }
+
+    main {
+        flex-direction: column;
+        justify-content: center;
+        max-height: 900px;
+        height: 100vh;
+        width: 350px;
+        padding-right: 0;
+    }
+
+    #image-box img {
+        display: none;
+    }
+
+    #text-box {
+        padding: 0;
+        gap: 10px;
+    }
+
+    #text-box img {
+        max-width: 100%;
+        width: 130px;
+        height: 27px;
+        margin-left: 30px;
+        margin-top: 40px;
+    }
+
+    #logo {
+        margin-bottom: 25px;
+    }
+
+    #girl-mobile {
+        width: 350px;
+        height: 233px;
+        background-image: url(./images/hero-mobile.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        margin-bottom: 50px;
+    }
+
+    #title {
+        text-align: center;
+    }
+
+    #informations {
+        width: 350px;
+        font-size: 14px;
+        text-align: center;
+        margin-bottom: 20px;
+        padding: 10px;
+    }
+
+    #data-entry {
+        display: flex;
+        justify-content: center;
+        width: 280px;
+    }
+
+    #email {
+        width: 280px;
+        padding: 22px;
+    }
+
+    #btn {
+        width: 65px;
+        padding: 22px;
+    }
+
+    form {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #data-entry img {
+        width: 10px;
+        height: 17px;
+        margin: 0;
+        position: absolute;
+        left: 28px;
+        top: 15px;
+    }
+
+    .denied {
+        width: 280px;
+    }
+
+    .message {
+        align-self: flex-start;
+        font-size: 14px;
+        margin-left: 50px;
+        margin-top: 15px;
+    }
+
+    #icon-error {
+        width: 22px;
+        height: 22px;
+        left: 80px;
+        bottom: 25px;
+    }
+
+    #icon-error img {
+        width: 22px;
+        height: 22px;
+    }
 }
